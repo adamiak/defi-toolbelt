@@ -1,0 +1,36 @@
+{
+  "name": "defi-toolbelt",
+  "version": "0.0.1",
+  "description": "Solidity contracts for building automated investment strategies",
+  "scripts": {
+    "test": "npx hardhat typechain && npx hardhat test && npm run docgen",
+    "compile": "npx hardhat compile && npm run docgen",
+    "docgen": "rm -rf ./artifacts && npx hardhat docgen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamiak/defi-toolbelt"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "uniswap",
+    "liquidity",
+    "smart",
+    "contracts",
+    "defi"
+  ],
+  "author": "Adrian Adamiak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamiak/defi-toolbelt"
+  },
+  "homepage": "https://github.com/adamiak/defi-toolbelt",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
+    "@openzeppelin/contracts": "3.4.2-solc-0.7",
+    "bignumber.js": "^9.0.2",
+    "hardhat": "^2.10.1",
+    "solidity-docgen": "^0.6.0-beta.22"
+  }
+}
